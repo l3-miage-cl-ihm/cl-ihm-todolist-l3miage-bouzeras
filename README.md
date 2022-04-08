@@ -19,6 +19,9 @@ Amel LOUNIS
 # Nos echecs 
 -  Quelques problèmes de configuration(ça concerne la version de Angular CLI qui reconnait pas le ng) mais on a réussi à le résoudre.
 - On a pas réussi à stocker notre Todolist dans la BD, et quand on actualise la page sur l'onglet tout les items disparaissent. 
+- on a eu des erreur au niveau de firestore qu'on a pas reusi a résoudre ( ainsi qu'avec le manque du temps)
+![image](https://user-images.githubusercontent.com/77328590/162489280-48134b52-7697-48b0-a179-b84c0c7454e4.png)
+
 - L'image ne s'affiche pas dans l'interface de l'application ( sur la console ne s'affiche pas et ça nous donne une error 404) 
 
 
