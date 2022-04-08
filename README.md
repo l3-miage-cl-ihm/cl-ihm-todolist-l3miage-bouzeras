@@ -1,3 +1,33 @@
+Membres du groupe : 
+Salima Bouzera 
+Amel LOUNIS 
+
+# Les fonctionnalités de notre  TodoList : 
+
+- On peut écrire des taches à faire (les items) et modifier un item grace à l'appel à la méthode update qui fait appel au service.
+- On a réussi à faire des filtres ( afficher tout les items, supprimer ceux qui sont déja fais, les items actifs et ceux qui sont déja complétés.
+- On peut sélectionner tout nos items. 
+- On arrive à se connecter et à se déconnecter depuis l'interface de l'appli.
+
+# Mise en oeuvre de Firebase  
+ En suivant les différents étapes présentées sur teams : 
+ - On s'est connecté à firebase avec un compte google et on a ajouté notre projet 
+ - On arrive à se connecter depuis le terminal avec un seul compte google.
+ 
+
+# Nos echecs 
+-  Quelques problèmes de configuration(ça concerne la version de Angular CLI qui reconnait pas le ng) mais on a réussi à le résoudre.
+ - On a pas réussi à stocker notre Todolist dans la BD, et quand on actualise la page sur l'onglet tout les items disparaissent. 
+- L'image ne s'affiche pas dans l'interface de l'application ( sur la console ne s'affiche pas et ça nous donne une error 404) 
+
+
+
+
+
+
+
+
+
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7359558&assignment_repo_type=AssignmentRepo)
 # L3mTpXTodolistAngularY2022
 
