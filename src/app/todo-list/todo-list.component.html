@@ -1,0 +1,58 @@
+
+
+<section class="todoapp" *ngIf="tdlobs | async as TDL ">
+  <header class="header">
+    <h1> {{TDL.label}} </h1>
+    <form (submit)="ajouter(lab.value); lab.value=''">
+      <input name="newTodoInput"
+             class="new-todo" 
+             placeholder="Que faire?" 
+             autofocus #lab />
+    </form>
+
+  </header>
+  <section class="main"> 
+    <input class="toggle-all"
+          type="checkbox"
+          name="toggleAll"
+          [ngModel]= "TDL.allDone"/>
+
+    <label for="toggleAll"
+    (click)="updateAllDone(!TDL.allDone, TDL.items)"
+    >Mark all as complete</label>
+    <ul class="todo-list">
+      <li *ngFor="let item of TDL.displayedItems" [class.editing]="ctdi.editing">
+        <app-todo-item #ctdi [data]="item"
+                             (update)="update($event,item)"
+                             (remove)="delete($event)">
+        </app-todo-item>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer" *ngIf="TDL.displayedItems.length > 0">
+    <span class="todo-count"><strong> {{TDL.remaining}} </strong> restantes</span>
+    <ul class="filters">
+      <li>
+        <a class="filterAll"
+           [class.selected]="TDL.filter === filterAll"
+           (click)="setfilter(filterAll)"
+           >Tous</a>
+
+      </li>
+      <li>
+        <a class="filterActives"
+        [class.selected]="TDL.filter===filterActives"
+        (click)="setfilter(filterActives)">Actifs</a>
+      </li>
+      <li>
+        <a class="filterCompleted"
+        [class.selected]="TDL.filter===filterCompleted"
+        (click)="setfilter(filterCompleted)">Complétés</a>
+      </li>
+    </ul>
+    <button class="clear-completed"
+            (click) = "deleteItems(TDL.items.filter(filterCompleted))"> Supprimer cochées</button>
+    
+  </footer>
+</section>

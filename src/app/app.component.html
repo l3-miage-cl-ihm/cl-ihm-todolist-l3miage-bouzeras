@@ -1,2 +1,24 @@
-<h1>TP TodoList</h1>
+
+<app-authentification></app-authentification>
+<app-todo-list></app-todo-list>
+
+<hr>
+<hr>
+
+<form (ngSubmit)="submitForm(name.value); name.value=''">
+  <input #name type="text" >
+</form>
+
+<ul *ngIf="(ObsTodoService | async) as obsService">
+  <li *ngFor="let item of obsService.items; trackBy: trackById">
+    <input type="checkbox" [ngModel]="item.isDone" (ngModelChange)="update({isDone: $event}, item)">
+    <input type="text" [ngModel]="item.label" (ngModelChange)="update({label: $event}, item)">
+    <button (click)="delete(item)">Delete</button>
+  </li>
+</ul>
+
+<hr>
+<pre>
+  {{ ObsTodoService | async | json }}
+</pre>
 
