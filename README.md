@@ -8,6 +8,7 @@ Amel LOUNIS
 - On a réussi à faire des filtres ( afficher tout les items, supprimer ceux qui sont déja fais, les items actifs et ceux qui sont déja complétés.
 - On peut sélectionner tout nos items. 
 - On arrive à se connecter et à se déconnecter depuis l'interface de l'appli.
+- on a fait le deploi de l'application.
 
 # Mise en oeuvre de Firebase  
  En suivant les différents étapes présentées sur teams : 
@@ -17,7 +18,7 @@ Amel LOUNIS
 
 # Nos echecs 
 -  Quelques problèmes de configuration(ça concerne la version de Angular CLI qui reconnait pas le ng) mais on a réussi à le résoudre.
- - On a pas réussi à stocker notre Todolist dans la BD, et quand on actualise la page sur l'onglet tout les items disparaissent. 
+- On a pas réussi à stocker notre Todolist dans la BD, et quand on actualise la page sur l'onglet tout les items disparaissent. 
 - L'image ne s'affiche pas dans l'interface de l'application ( sur la console ne s'affiche pas et ça nous donne une error 404) 
 
 
